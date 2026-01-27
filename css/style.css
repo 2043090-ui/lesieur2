@@ -55,8 +55,146 @@ h3{
 
     margin:10px 0;
 
+    text-align: center;
+
 }
+
 
 /*-------------------------------------------------------------------------------
 COMPONENTS (Classe)
 --------------------------------------------------------------------------------*/
+
+/*wrapper*/
+
+.wrapper{
+    max-width: 1080px;
+    margin: 0 auto; /*1 -> haut et bas, 2-> gauche et droite*/
+
+}
+
+/*header*/
+
+.header{
+    background-color: #f26c25;
+    
+    color: white;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.header .wrapper{ /*parent direct, on ne travaiille pas direct sur le a et le nav*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*SI cela ne marche pas auto, mettre une height*/
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+
+    list-style-type: none;
+}
+
+.menu a:hover{
+
+    text-decoration: underline;
+
+}
+
+
+/*hero*/
+
+.hero{
+    padding:80px 0;
+
+
+    background-color: #eee;
+}
+
+/*Titre transport*/
+
+.titre_section{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #eee;
+
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.transport{
+    padding: 80px 0;
+}
+
+/*Conteneur transport*/
+
+.conteneur_transport{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+
+}
+
+.transport p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/*footer*/
+
+.menu_social a{
+
+display: block ; /*change de display parce que les éléments en ligne ne peuvent pas changer de taille*/
+width: 32px;
+height: 32px;
+
+}
+
+.footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu_social{
+    display: flex;
+    gap: 20px;
+ 
+    list-style-type: none;
+}
+
+.footer{
+    background-color: #000;
+    color: white;
+}
+
+.facebook a:hover{
+    background-color: #1877f2;
+}
+
+.twitter a:hover{
+    background-color: #1da1f2;
+}
+
+.linkedin a:hover{
+    background-color: #0166c2;
+}
