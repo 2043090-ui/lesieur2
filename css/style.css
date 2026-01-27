@@ -1,0 +1,62 @@
+/*-------------------------------------------------------------------------------
+GÉNÉRIQUE (box-sizing)
+--------------------------------------------------------------------------------*/
+
+html{
+    box-sizing: border-box;
+
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+/*-------------------------------------------------------------------------------
+ÉLÉMENTS (h1, h2, p)
+--------------------------------------------------------------------------------*/
+
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 18px; /*on le met pas normalement,sinon le site n'est plus accessible*/
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 300; /*ou light*/
+
+    letter-spacing: 0.2em; /*20% de 36px*/
+
+    margin: 0;
+    
+    text-align: center;
+
+
+}
+
+h2{
+    font-size: 18px;
+    font-weight: bold; /*Ou 700*/
+
+    margin: 0;
+}
+
+h3{
+    font-size: 36px;
+    font-weight: normal; /*Ou 400*/
+
+    margin:10px 0;
+
+}
+
+/*-------------------------------------------------------------------------------
+COMPONENTS (Classe)
+--------------------------------------------------------------------------------*/
