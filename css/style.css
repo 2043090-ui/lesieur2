@@ -198,3 +198,9 @@ height: 32px;
 .linkedin a:hover{
     background-color: #0166c2;
 }
+
+/*Aide stylisation*/
+
+.conteneur_transports_invisible{
+    display: none;
+}
